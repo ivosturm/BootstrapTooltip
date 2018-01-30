@@ -27,6 +27,8 @@ define([
         _tooltipTrigger: null,
 
         postCreate: function () {
+	    this._handles = [];	// used for storing subscriptions
+		
             logger.debug(this.id + ".postCreate");
 
             if (this.tooltipMode === "hover") {
