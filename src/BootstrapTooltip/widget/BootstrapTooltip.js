@@ -81,7 +81,7 @@ define([
             });
             
             // 20180130 - Ivo Sturm - fix for also being able to update the title once a new tooltiptext is fed from the datasouce microflow to the widget
-			$targetElement.attr('title', this._tooltipText).tooltip('fixTitle');
+	    $targetElement.attr('title', this._tooltipText).tooltip('fixTitle');
 
             this._executeCallback(cb, "_initializeTooltip");
         },
